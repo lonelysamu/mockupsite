@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Custom font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content curveedge darkbg">
+            <div class="modal-header p-0 ">
+              <img src="image\pic3v2.jpg" class="standardimage" id="headerimage" alt="">
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row p-0 m-0 justify-content-center align-items-center">
+                  <div class="col-8 text-start">
+                    <h4><strong id="beveragename"></strong></h4>
+                  </div>
+                  <div class="col-4 text-center">
+                    <h4><strong id="pricing"></strong></h4>
+                    <p>Base Price</p>
+                  </div>
+                  <hr>
+                  <div class="col-12">
+                    <h4><strong id="beveragename">Add Packaging Fee</strong> <span style="font-size: x-small;">*Pick One</span></h4>
+                  </div>
+                  <div class="col-8">
+                    <form action="/action_page.php">
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">Takeaway Packaging Fee</label><br>
+                    </form>
+                  </div>
+                  <div class="col-4 text-center">
+                    <p><strong>RM0.30</strong></p>
+                  </div>
+
+                  <div class="col-12 mt-5 text-center">
+                    <a href="success.html" class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4 m-1 mt-2">Buy</a>
+                    <button type="button" class="buttonstyle2 p-2 pe-4 ps-4 m-1 mt-2" data-bs-dismiss="modal" aria-label="Close"
+                    id="closemodal">Cancel Order</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="container-fluid blackbg justify-content-center">
+    <div class="row">
+      <div class="col-12 text-center hideori fadein">
+        <img src="image\logo.jpg" class="iconimage" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row p-0 m-0 justify-content-center">
+      <div class="col-12 mt-5 hideori fadein3">
+        <h1><strong>Recommended For You</strong></h1>
+      </div>
+    </div>
+
+    <div class="row p-0 m-0 mt-5 justify-content-center" id="contentbox">
+
+      <div class="col-11 col-md-6 col-lg-3 p-2 hideori fadefromtop1">
+        <div class="row p-0 m-0">
+          <div class="col-12">
+            <img src="image\pic1.jpg" class="standardimage" alt="">
+          </div>
+          <div class="col-12 text-center mt-4">
+            <h4>Teh Tarik</h4>
+            <h5><strong>RM5.90</strong></h5>
+            <button type="button" class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-11 col-md-6 col-lg-3 p-2 hideori fadefromtop2">
+        <div class="row p-0 m-0">
+          <div class="col-12">
+            <img src="image\pic2.jpg" class="standardimage" alt="">
+          </div>
+          <div class="col-12 text-center mt-4">
+            <h4>White Coffee</h4>
+            <h5><strong>RM6.90</strong></h5>
+            <button type="button" class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-11 col-md-6 col-lg-3 p-2 hideori fadefromtop3">
+        <div class="row p-0 m-0">
+          <div class="col-12">
+            <img src="image\pic3.jpg" class="standardimage" alt="">
+          </div>
+          <div class="col-12 text-center mt-4">
+            <h4>Long Black</h4>
+            <h5><strong>RM4.50</strong></h5>
+            <button type="button" class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-11 col-md-6 col-lg-3 p-2 hideori fadefromtop4">
+        <div class="row p-0 m-0">
+          <div class="col-12">
+            <img src="image\pic4.jpg" class="standardimage" alt="">
+          </div>
+          <div class="col-12 text-center mt-4">
+            <h4>Espresso</h4>
+            <h5><strong>RM8.90</strong></h5>
+            <button type="button" class="buttonstyle1 loadmodalbutton p-2 pe-4 ps-4" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="modal.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
